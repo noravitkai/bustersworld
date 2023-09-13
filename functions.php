@@ -1,6 +1,6 @@
 <?php
 function mt_register_stylesheet() {
-    wp_enqueue_style('custom_style', get_template_directory_uri() . '/tailwind.css');
+    wp_enqueue_style('custom_style', get_template_directory_uri() . '/style.css');
 }
 add_action('wp_enqueue_scripts', 'mt_register_stylesheet');
 
