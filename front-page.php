@@ -14,9 +14,32 @@ Template Name: Front Page
     <section class="hero-section" style="background-image: url('<?php echo esc_url($hero_image['url']); ?>'); background-size: cover; background-position: center; height: 100vh;">
         <div class="hero-content">
                 <h1 class="hero-heading"><?php the_field('hero_heading'); ?></h1>
-                <p class="hero-subheading"><?php the_field('hero_subheading'); ?></p>
+                <h2 class="hero-subheading"><?php the_field('hero_subheading'); ?></h2>
                 <p class="hero-date"><?php the_field('date'); ?></p>
                 <a href="<?php the_field('cta_button_link'); ?>" class="hero-button"><?php the_field('cta_button_text'); ?></a>
+        </div>
+    </section>
+
+    <!-- Ticket Section -->
+    <section class="ticket-section">
+        <div class="ticket-content">
+            <h2 class="ticket-heading"><?php the_field('ticket_heading'); ?></h2>
+
+            <div class="child-ticket">  
+                <?php $child_ticket_image = get_field('child_ticket_image'); ?>
+                    <?php if ($child_ticket_image) : ?>
+                        <img src="<?php echo esc_url($child_ticket_image['url']); ?>" alt="<?php echo esc_attr($child_ticket_image['alt']); ?>">
+                    <?php endif; ?>
+                <p><?php the_field('child_ticket_description') ?></p>
+            </div>
+
+            <div class="adult-ticket">
+                <p><?php the_field('adult_ticket_description') ?></p>
+                <?php $adult_ticket_image = get_field('adult_ticket_image'); ?>
+                    <?php if ($adult_ticket_image) : ?>
+                        <img src="<?php echo esc_url($adult_ticket_image['url']); ?>" alt="<?php echo esc_attr($adult_ticket_image['alt']); ?>">
+                    <?php endif; ?>
+            </div>
         </div>
     </section>
 

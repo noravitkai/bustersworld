@@ -8,6 +8,7 @@ body {
 }
 
 /* Hero Section */
+
 .hero-section {
   position: relative;
   text-align: center;
@@ -57,4 +58,45 @@ body {
 
 .hero-button:hover {
   background-color: #C53030;
+}
+
+/* Ticket Section */
+
+.ticket-section {
+background-color: #082F49;
+color: white;
+padding-bottom: 3rem;
+}
+
+.ticket-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child-ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 9rem;
+  align-items: center;
+  margin: 0rem 12rem;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.adult-ticket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 9rem;
+  align-items: center;
+  margin: 0rem 12rem;
+  font-size: 1.25rem;
+}
+
+.ticket-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
