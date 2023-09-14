@@ -7,6 +7,50 @@ body {
   overflow-x: hidden;
 }
 
+/* Navbar */
+
+.custom-navbar {
+  background-color: #082f49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.logo img {
+  max-height: 20px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #E53E3E;
+}
+
 /* Hero Section */
 
 .hero-section {
