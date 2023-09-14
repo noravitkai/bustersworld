@@ -60,11 +60,78 @@ body {
   background-color: #C53030;
 }
 
+/* Story Section */
+
+.story-section {
+  background-color: #082f49;
+  color: white;
+  padding-bottom: 3rem;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-decoration: underline dashed #E53E3E;
+  text-underline-offset: 0.4em;
+}
+
+.story-stages {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  align-items: center;
+  margin: 0rem 12rem;
+  margin-bottom: 3rem;
+}
+
+.story-book,
+.story-movie,
+.story-play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book-description,
+.movie-description,
+.play-description,
+.book-year,
+.movie-year,
+.play-year {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.year-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #E53E3E;
+  border: 2px dashed #E53E3E;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.year-button:hover {
+  background-color: #E53E3E;
+  color: white;
+}
+
 /* Ticket Section */
 
 .ticket-section {
-background-color: #082F49;
-color: white;
+background-color: #f9f9f9;
+color: black;
 padding-bottom: 3rem;
 }
 
@@ -72,6 +139,12 @@ padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.ticket-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
 }
 
 .child-ticket {
@@ -99,12 +172,31 @@ padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
+  text-decoration: underline dashed #082f49;
+  text-underline-offset: 0.4em;
+}
+
+.ticket-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #082f49;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-button:hover {
+  background-color: #2d6a99;
 }
 
 /* Competition Section */
 
 .competition-section {
-  background-color: #F9f9f9;
+  background-color: #F5f5f5;
   color: black;
   padding-bottom: 3rem;
 }
@@ -119,6 +211,9 @@ padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-decoration: underline dashed #E53E3E;
+  text-underline-offset: 0.4em;
 }
 
 .competition-blocks {
