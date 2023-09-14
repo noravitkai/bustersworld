@@ -43,6 +43,28 @@ Template Name: Front Page
         </div>
     </section>
 
+    <!-- Competition Section -->
+    <section class="competition-section">
+        <div class="competition-content">
+            <h2 class="competition-heading"><?php the_field('competition_heading'); ?></h2>
+
+            <div class="competition-blocks">
+                <div class="competition-details">
+                    <h3><?php the_field('competition_subheading') ?></h3>
+                    <p><?php the_field('competition_description'); ?></p>
+                    <?php $competition_illustration = get_field('competition_illustration'); ?>
+                        <?php if ($competition_illustration) : ?>
+                            <img src="<?php echo esc_url($competition_illustration['url']); ?>" alt="<?php echo esc_attr($competition_illustration['alt']); ?>">
+                        <?php endif; ?>
+                </div>
+
+                <div class="competition-form">
+                    <?php echo do_shortcode('[contact-form-7 id="5" title="Competition Form"]'); ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>

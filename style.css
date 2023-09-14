@@ -51,7 +51,7 @@ body {
   background-color: #E53E3E;
   color: white;
   border: none;
-  border-radius: 1.5625rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
@@ -99,4 +99,132 @@ padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
+}
+
+/* Competition Section */
+
+.competition-section {
+  background-color: #F9f9f9;
+  color: black;
+  padding-bottom: 3rem;
+}
+
+.competition-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.competition-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.competition-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 9rem;
+  align-items: flex-start;
+  margin: 0rem 12rem;
+  font-size: 1.25rem;
+  align-items: center;
+}
+
+.competition-details,
+.competition-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.competition-subheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.competition-details h3 {
+  margin: 0;
+}
+
+.competition-details img {
+    height: 200px;
+    width: auto;
+  }
+
+/* Competition Form */
+
+.wpcf7-form {
+  border: 0.125rem solid #E53E3E;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  background-color: #F9f9f9;
+  margin: 0rem;
+}
+
+.wpcf7-form p {
+  margin: 0.625rem 0;
+}
+
+.wpcf7-form label {
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.625rem;
+  font-size: 1rem;
+}
+
+.wpcf7-form input[type="text"]:focus,
+.wpcf7-form input[type="email"]:focus {
+  border: 0.125rem solid #E53E3E;
+}
+
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="submit"] {
+  border: 0.125rem solid #E53E3E;
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #F9f9f9;
+}
+
+.wpcf7-form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #E53E3E;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: auto;
+}
+
+.wpcf7-form input[type="submit"]:hover {
+  background-color: #C53030;
+}
+
+.divider {
+  border-top: 0.125rem dashed #E53E3E;
+  margin: 2rem 0rem;
+}
+
+.wpcf7-form input[type="text"][readonly="readonly"] {
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #E53E3E;
+}
+
+.wpcf7-spinner {
+  display: none;
 }
