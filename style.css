@@ -368,6 +368,84 @@ padding-bottom: 3rem;
   display: none;
 }
 
+/* Welcome Section */
+
+.welcome-section {
+  background-color: #f5f5f5;
+  color: black;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.welcome-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-decoration: underline dashed #082f49;
+  text-underline-offset: 0.4em;
+}
+
+.directors-subheading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.welcome-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.welcome-text {
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+}
+
+.directors-message {
+  font-size: 1.25rem;
+}
+
+.directors-signature {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #082f49;
+  border: 2px dashed #082f49;
+  border-radius: 0.5rem;
+}
+
+.directors-photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .welcome-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-text {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
 /* Actor Section */
 
 .actor-section {

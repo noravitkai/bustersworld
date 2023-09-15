@@ -6,64 +6,90 @@ Template Name: Programme
 
 <?php get_header(); ?>
 
-<!-- Actors Section -->
+<?php while (have_posts()) : the_post(); ?>
 
-<section class="actor-section">
-    <div class="actor-content">
-        <h2 class="actor-heading"><?php the_field('actor_heading'); ?></h2>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <h2 class="welcome-heading"><?php the_field('welcome_heading'); ?></h2>
+            <div class="welcome-columns">
+                <div class="welcome-text">
+                    <h2 class="directors-subheading"><?php the_field('directors_subheading'); ?></h2>
+                    <?php $directors_message = get_field('directors_message'); ?>
+                    <?php if ($directors_message) : ?>
+                        <p class="directors-message"><?php echo esc_html($directors_message); ?></p>
+                    <?php endif; ?>
+                    <p class="directors-signature"><?php the_field('directors_signature'); ?></p>
+                </div>
+                <div class="directors-photo">
+                    <?php $directors_photo = get_field('directors_photo'); ?>
+                    <?php if ($directors_photo) : ?>
+                        <img src="<?php echo esc_url($directors_photo['url']); ?>" alt="<?php echo esc_attr($directors_photo['alt']); ?>">
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="actor-columns">
-            <?php
-            $actors_args = array(
-                'post_type' => 'actor',
-                'posts_per_page' => -1,
-                'order' => 'ASC',
-            );
-            
-            $actors_query = new WP_Query($actors_args);            
+    <!-- Actors Section -->
+    <section class="actor-section">
+        <div class="actor-content">
+            <h2 class="actor-heading"><?php the_field('actor_heading'); ?></h2>
 
-            if ($actors_query->have_posts()) :
-                $count = 0;
-                while ($actors_query->have_posts()) :
-                    $actors_query->the_post();
-                    if ($count % 3 === 0) :
-            ?>
+            <div class="actor-columns">
+                <?php
+                $actors_args = array(
+                    'post_type' => 'actor',
+                    'posts_per_page' => -1,
+                    'order' => 'ASC',
+                );
 
-                        <div class="actor-set">
-                            <?php endif; ?>
+                $actors_query = new WP_Query($actors_args);
 
-                            <div class="actor-item">
-                                <div class="actor-image">
-                                    <?php $actor_image = get_field('actor_image'); ?>
-                                    <?php if ($actor_image) : ?>
-                                        <img src="<?php echo esc_url($actor_image['url']); ?>" alt="<?php echo esc_attr($actor_image['alt']); ?>">
-                                    <?php endif; ?>
+                if ($actors_query->have_posts()) :
+                    $count = 0;
+                    while ($actors_query->have_posts()) :
+                        $actors_query->the_post();
+                        if ($count % 3 === 0) :
+                ?>
+
+                            <div class="actor-set">
+                                <?php endif; ?>
+
+                                <div class="actor-item">
+                                    <div class="actor-image">
+                                        <?php $actor_image = get_field('actor_image'); ?>
+                                        <?php if ($actor_image) : ?>
+                                            <img src="<?php echo esc_url($actor_image['url']); ?>" alt="<?php echo esc_attr($actor_image['alt']); ?>">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="actor-details">
+                                        <h3 class="actor-name"><?php the_field('actor_name'); ?></h3>
+                                        <p class="actor-character">Character: <?php the_field('character_name'); ?></p>
+                                    </div>
                                 </div>
-                                <div class="actor-details">
-                                    <h3 class="actor-name"><?php the_field('actor_name'); ?></h3>
-                                    <p class="actor-character">Character: <?php the_field('character_name'); ?></p>
-                                </div>
+
+                                <?php $count++;
+                                if ($count % 3 === 0) : ?>
                             </div>
 
-                            <?php $count++;
-                            if ($count % 3 === 0) : ?>
+                    <?php endif;
+                    endwhile;
+
+                    if ($count % 3 !== 0) :
+                    ?>
                         </div>
+                    <?php endif;
 
-                <?php endif;
-                endwhile;
-
-                if ($count % 3 !== 0) :
+                    wp_reset_postdata();
+                else :
+                    echo 'No actors found.';
+                endif;
                 ?>
-                    </div>
-                <?php endif;
-
-                wp_reset_postdata();
-            else :
-                echo 'No actors found.';
-            endif;
-            ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+<?php endwhile; ?>
 
 <?php get_footer(); ?>
