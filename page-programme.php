@@ -90,6 +90,21 @@ Template Name: Programme
         </div>
     </section>
 
+    <!-- Reviews and Ratings Section -->
+    <section class="reviews-section">
+        <div class="reviews-content">
+            <h2 class="reviews-heading"><?php the_field('reviews_heading'); ?></h2>
+            <div class="reviews-columns">
+                <div class="reviews-form">
+                    <?php echo do_shortcode('[site_reviews_form]');?>
+                </div>
+                <div class="reviews-submitted">
+                    <?php echo do_shortcode('[site_reviews HIDEREVIEWS="0" NUM="3"]');?>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
