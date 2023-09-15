@@ -90,6 +90,55 @@ Template Name: Programme
         </div>
     </section>
 
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="sponsors-content">
+            <h2 class="sponsors-heading"><?php the_field('sponsors_heading'); ?></h2>
+            <div class="sponsors-list">
+                <?php
+                $sponsors_args = array(
+                    'post_type' => 'sponsor',
+                    'posts_per_page' => -1,
+                    'order' => 'ASC',
+                );
+
+                $sponsors_query = new WP_Query($sponsors_args);
+
+                if ($sponsors_query->have_posts()) :
+                    $count = 0;
+                    while ($sponsors_query->have_posts()) :
+                        $sponsors_query->the_post();
+                        if ($count % 5 === 0) :
+                ?>
+                            <div class="sponsor-row">
+                <?php endif; ?>
+
+                        <div class="sponsor-item">
+                            <?php $sponsor_logo = get_field('sponsor_logo'); ?>
+                            <?php if ($sponsor_logo) : ?>
+                                <img src="<?php echo esc_url($sponsor_logo['url']); ?>" alt="<?php echo esc_attr($sponsor_logo['alt']); ?>">
+                            <?php endif; ?>
+                        </div>
+
+                        <?php $count++;
+                        if ($count % 5 === 0) : ?>
+                            </div>
+                <?php endif;
+                    endwhile;
+
+                    if ($count % 5 !== 0) : ?>
+                        </div>
+                <?php endif;
+
+                    wp_reset_postdata();
+                else :
+                    echo 'No sponsors found.';
+                endif;
+                ?>
+            </div>
+        </div>
+    </section>
+
     <!-- Reviews and Ratings Section -->
     <section class="reviews-section">
         <div class="reviews-content">
@@ -99,7 +148,7 @@ Template Name: Programme
                     <?php echo do_shortcode('[site_reviews_form]');?>
                 </div>
                 <div class="reviews-submitted">
-                    <?php echo do_shortcode('[site_reviews HIDEREVIEWS="0" NUM="3"]');?>
+                    <?php echo do_shortcode('[site_reviews HIDEREVIEWS="0" NUM="4"]');?>
                 </div>
             </div>
         </div>
