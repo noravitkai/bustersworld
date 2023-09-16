@@ -1,6 +1,6 @@
 /*!
-Theme Name: Buster's World Theme
-Author: Nora Vitkai
+ Theme Name: Buster's World Theme
+ Author: Nora Vitkai
 */
 
 body {
@@ -9,7 +9,6 @@ body {
 }
 
 /* Navbar */
-
 .custom-navbar {
   background-color: #082f49;
   display: flex;
@@ -37,7 +36,7 @@ body {
 }
 
 .menu li {
-  margin-right: 20px;
+  margin-right: 20px; /* Reduce to a single space */
 }
 
 .menu a {
@@ -49,11 +48,10 @@ body {
 }
 
 .menu a:hover {
-  color: #E53E3E;
+  color: #e53e3e;
 }
 
 /* Hero Section */
-
 .hero-section {
   position: relative;
   text-align: center;
@@ -84,7 +82,7 @@ body {
 
 .hero-date {
   font-size: 1.25rem;
-  color: #E53E3E;
+  color: #e53e3e;
   margin-bottom: 2rem;
 }
 
@@ -93,7 +91,7 @@ body {
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #E53E3E;
+  background-color: #e53e3e;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -102,11 +100,10 @@ body {
 }
 
 .hero-button:hover {
-  background-color: #C53030;
+  background-color: #c53030;
 }
 
 /* Story Section */
-
 .story-section {
   background-color: #082f49;
   color: white;
@@ -123,8 +120,8 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  text-decoration: underline dashed #E53E3E;
-  text-underline-offset: 0.4em;
+  text-decoration: underline dashed #e53e3e;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
 }
 
 .story-stages {
@@ -132,7 +129,7 @@ body {
   flex-direction: row;
   gap: 6rem;
   align-items: center;
-  margin: 0rem 12rem;
+  margin: 0 12rem; /* Reduce to a single space */
   margin-bottom: 3rem;
 }
 
@@ -160,24 +157,25 @@ body {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: bold;
-  color: #E53E3E;
-  border: 2px dashed #E53E3E;
+  color: #e53e3e;
+  border: 2px dashed #e53e3e;
   border-radius: 0.5rem;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
 }
 
+/* Maintain hover effect on smaller screens */
 .year-button:hover {
-  background-color: #E53E3E;
+  background-color: #e53e3e;
   color: white;
 }
 
 /* Ticket Section */
-
 .ticket-section {
-background-color: #f9f9f9;
-color: black;
-padding-bottom: 3rem;
+  background-color: #f9f9f9;
+  color: black;
+  padding-bottom: 3rem;
 }
 
 .ticket-content {
@@ -189,16 +187,16 @@ padding-bottom: 3rem;
 .ticket-details {
   display: flex;
   flex-direction: column;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .child-ticket {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 9rem;
+  gap: 10rem;
   align-items: center;
-  margin: 0rem 12rem;
+  margin: 0 12rem; /* Reduce to a single space */
   font-size: 1.25rem;
   margin-bottom: 3rem;
 }
@@ -209,7 +207,7 @@ padding-bottom: 3rem;
   justify-content: space-evenly;
   gap: 9rem;
   align-items: center;
-  margin: 0rem 12rem;
+  margin: 0 12rem; /* Reduce to a single space */
   font-size: 1.25rem;
 }
 
@@ -218,7 +216,12 @@ padding-bottom: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4em;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+}
+
+.child-ticket-subheading,
+.adult-ticket-subheading {
+  margin: 0;
 }
 
 .ticket-button {
@@ -239,9 +242,8 @@ padding-bottom: 3rem;
 }
 
 /* Competition Section */
-
 .competition-section {
-  background-color: #F5f5f5;
+  background-color: #f5f5f5;
   color: black;
   padding-bottom: 3rem;
 }
@@ -257,8 +259,8 @@ padding-bottom: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  text-decoration: underline dashed #E53E3E;
-  text-underline-offset: 0.4em;
+  text-decoration: underline dashed #e53e3e;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
 }
 
 .competition-blocks {
@@ -267,7 +269,7 @@ padding-bottom: 3rem;
   justify-content: space-evenly;
   gap: 9rem;
   align-items: flex-start;
-  margin: 0rem 12rem;
+  margin: 0 12rem; /* Reduce to a single space */
   font-size: 1.25rem;
   align-items: center;
 }
@@ -290,9 +292,9 @@ padding-bottom: 3rem;
 }
 
 .competition-details img {
-    height: 200px;
-    width: auto;
-  }
+  height: 200px;
+  width: auto;
+}
 
 /* Competition Form */
 
@@ -300,7 +302,7 @@ padding-bottom: 3rem;
   border: 0.125rem solid #E53E3E;
   border-radius: 0.5rem;
   padding: 1.25rem;
-  background-color: #F9f9f9;
+  background-color: #f9f9f9;
 }
 
 .wpcf7-form p {
@@ -318,13 +320,13 @@ padding-bottom: 3rem;
 .wpcf7-form input[type="text"],
 .wpcf7-form input[type="email"],
 .wpcf7-form input[type="submit"] {
-  border: 0.125rem solid #E53E3E;
+  border: 0.125rem solid #e53e3e;
   border-radius: 0.5rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   width: 100%;
   margin-bottom: 0;
-  background-color: #F9f9f9;
+  background-color: #f9f9f9;
   box-sizing: border-box;
 }
 
@@ -334,7 +336,7 @@ padding-bottom: 3rem;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #E53E3E;
+  background-color: #e53e3e;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -345,12 +347,12 @@ padding-bottom: 3rem;
 }
 
 .wpcf7-form input[type="submit"]:hover {
-  background-color: #C53030;
+  background-color: #c53030;
 }
 
 .divider {
-  border-top: 0.125rem dashed #E53E3E;
-  margin: 2rem 0rem;
+  border-top: 0.125rem dashed #e53e3e;
+  margin: 2rem 0;
 }
 
 .wpcf7-form input[type="text"][readonly="readonly"] {
@@ -358,7 +360,7 @@ padding-bottom: 3rem;
   text-align: left;
   font-size: 1rem;
   font-weight: bold;
-  color: #E53E3E;
+  color: #e53e3e;
 }
 
 .wpcf7-spinner {
@@ -366,7 +368,6 @@ padding-bottom: 3rem;
 }
 
 /* Welcome Section */
-
 .welcome-section {
   background-color: #f5f5f5;
   color: black;
@@ -387,7 +388,7 @@ padding-bottom: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4em;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
 }
 
 .directors-subheading {
@@ -444,7 +445,6 @@ padding-bottom: 3rem;
 }
 
 /* Actor Section */
-
 .actor-section {
   background-color: #f9f9f9;
   color: black;
@@ -461,8 +461,8 @@ padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  text-decoration: underline dashed #E53E3E;
-  text-underline-offset: 0.4em;
+  text-decoration: underline dashed #e53e3e;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
   padding-bottom: 1.5rem;
 }
 
@@ -495,19 +495,18 @@ padding-bottom: 3rem;
 
 .actor-character {
   font-size: 1.25rem;
-  color: #E53E3E;
+  color: #e53e3e;
 }
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
   .left-column,
   .right-column {
-    width: 100%; /* Display actors in a single column on smaller screens */
+    width: 100%;
   }
 }
 
 /* Sponsors Section */
-
 .sponsors-section {
   background-color: #f5f5f5;
   color: black;
@@ -525,7 +524,7 @@ padding-bottom: 3rem;
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4em;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
   padding-bottom: 1.5rem;
 }
 
@@ -541,7 +540,6 @@ padding-bottom: 3rem;
 }
 
 /* Reviews and Ratings Section */
-
 .reviews-section {
   background-color: #f9f9f9;
   color: black;
@@ -558,8 +556,8 @@ padding-bottom: 3rem;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 3rem;
-  text-decoration: underline dashed #E53E3E;
-  text-underline-offset: 0.4em;
+  text-decoration: underline dashed #e53e3e;
+  text-underline-offset: 0.4rem; /* Use 'rem' unit */
   padding-bottom: 1.5rem;
 }
 
@@ -592,6 +590,7 @@ padding-bottom: 3rem;
   background-color: #f9f9f9;
 }
 
+.reviews-form #site-reviews-rating-glsr_83953ed1,
 .reviews-form #site-reviews-title-glsr_83953ed1,
 .reviews-form #site-reviews-content-glsr_83953ed1,
 .reviews-form #site-reviews-name-glsr_83953ed1,
@@ -604,7 +603,7 @@ padding-bottom: 3rem;
 
 /* Review Form */
 .glsr-review-form {
-  border: 2px solid #E53E3E;
+  border: 2px solid #e53e3e;
   border-radius: 0.5rem;
   padding: 1.25rem;
   background-color: #f9f9f9;
@@ -624,7 +623,7 @@ padding-bottom: 3rem;
 
 .glsr-input,
 .glsr-textarea {
-  border: 2px solid #E53E3E;
+  border: 2px solid #e53e3e;
   border-radius: 0.5rem;
   padding: 0.625rem;
   width: 100%;
@@ -636,7 +635,7 @@ padding-bottom: 3rem;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #E53E3E;
+  background-color: #e53e3e;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -646,16 +645,15 @@ padding-bottom: 3rem;
 }
 
 .glsr-button:hover {
-  background-color: #C53030;
+  background-color: #c53030;
 }
 
 /* Submitted Reviews */
-
 .reviews-submitted {
   flex: 1;
   padding: 1rem;
   margin-left: 1rem;
-  border: 2px dashed #E53E3E;
+  border: 2px dashed #e53e3e;
   border-radius: 0.5rem;
   background-color: #f9f9f9;
   padding: 1rem;
@@ -671,11 +669,10 @@ padding-bottom: 3rem;
 }
 
 .glsr-review-author {
-  color: #E53E3E;
+  color: #e53e3e;
 }
 
 /* Footer Section */
-
 .custom-footer {
   background-color: #082f49;
   color: white;
@@ -692,7 +689,7 @@ padding-bottom: 3rem;
 
 .contact-info h3, .social-media h3, .location-info h3 {
   font-size: 1.25rem;
-  color: #C53030;
+  color: #c53030;
   margin-bottom: 1rem;
 }
 
@@ -710,7 +707,7 @@ padding-bottom: 3rem;
 }
 
 .social-media a:hover {
-  color: #E53E3E;
+  color: #e53e3e;
 }
 
 .location-info {
@@ -719,7 +716,7 @@ padding-bottom: 3rem;
 
 .footer-line {
   border: none;
-  border-top: 2px dashed #E53E3E;
+  border-top: 2px dashed #e53e3e;
   margin: 1rem auto;
 }
 
@@ -735,5 +732,212 @@ padding-bottom: 3rem;
 }
 
 .contact-info a:hover, .social-media a:hover {
-  color: #E53E3E;
+  color: #e53e3e;
+}
+
+/* Media Query for tablets and mobiles */
+@media (max-width: 768px) {
+  /* Story Section */
+  .story-stages {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 2rem;
+  }
+
+  .story-book,
+  .story-movie,
+  .story-play {
+    text-align: left;
+  }
+
+  .story-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .year-button {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  /* Ticket Section */
+  .child-ticket,
+  .adult-ticket {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 2rem;
+    font-size: 0.875rem;
+  }
+
+  .child-ticket img,
+  .adult-ticket img {
+    max-width: 100%;
+    align-self: flex-start;
+  }
+
+  .child-ticket {
+    margin-bottom: 3rem;
+  }
+
+  .ticket-details p {
+    font-size: 0.875rem;
+  }
+
+  .ticket-button {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .child-ticket-subheading,
+  .adult-ticket-subheading {
+    text-align: left;
+  }
+
+  .ticket-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .adult-ticket img {
+    order: -1;
+  }
+
+  /* Competition Section */
+  .competition-blocks {
+    flex-direction: column;
+  }
+
+  .competition-details,
+  .competition-form {
+    margin: 0.1rem 0;
+    width: 100%;
+  }
+
+  .competition-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .competition-subheading {
+    text-align: left;
+    font-size: 0.875rem;
+  }
+
+  .competition-details h3 {
+    font-size: 1rem;
+    margin: 0.1rem 0;
+  }
+
+  .competition-details p {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Competition Form */
+  .competition-form {
+    margin-top: 0.1rem;
+  }
+
+  .wpcf7-form input[type="text"],
+  .wpcf7-form input[type="email"],
+  .wpcf7-form input[type="submit"] {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .competition-blocks {
+    gap: 3rem;
+  }
+
+  /* Welcome Section */
+  .welcome-columns {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 2rem;
+    gap: 1rem;
+  }
+
+  .welcome-text {
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .welcome-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .directors-subheading {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .welcome-text p {
+    font-size: 0.875rem;
+  }
+
+  /* Actors Section */
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .actor-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .actor-name,
+  .actor-character {
+    font-size: 0.875rem;
+  }
+
+  /* Sponsors Section */
+  .sponsor-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sponsor-item {
+    flex-basis: calc(33.33% - 2rem);
+    margin: 1rem;
+  }
+
+  .sponsors-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Reviews Section */
+  .reviews-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .reviews-form {
+    text-align: center;
+  }
+
+  .reviews-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer-line {
+    width: 100%;
+  }
 }

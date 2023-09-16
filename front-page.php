@@ -31,7 +31,7 @@ Template Name: Home
                     <?php if ($book_icon) : ?>
                         <img src="<?php echo esc_url($book_icon['url']); ?>" alt="<?php echo esc_attr($book_icon['alt']); ?>">
                     <?php endif; ?>
-                    <h3><?php the_field('book_description'); ?></h3>
+                    <p><?php the_field('book_description'); ?></p>
                     <a class="year-button" href="<?php the_field('book_link'); ?>"><?php the_field('book_year'); ?></a>
                 </div>
 
@@ -40,7 +40,7 @@ Template Name: Home
                     <?php if ($movie_icon) : ?>
                         <img src="<?php echo esc_url($movie_icon['url']); ?>" alt="<?php echo esc_attr($movie_icon['alt']); ?>">
                     <?php endif; ?>
-                    <h3><?php the_field('movie_description'); ?></h3>
+                    <p><?php the_field('movie_description'); ?></p>
                     <a class="year-button" href="<?php the_field('movie_link'); ?>"><?php the_field('movie_year'); ?></a>
                 </div>
 
@@ -49,7 +49,7 @@ Template Name: Home
                     <?php if ($play_icon) : ?>
                         <img src="<?php echo esc_url($play_icon['url']); ?>" alt="<?php echo esc_attr($play_icon['alt']); ?>">
                     <?php endif; ?>
-                    <h3><?php the_field('play_description'); ?></h3>
+                    <p><?php the_field('play_description'); ?></p>
                     <a class="year-button" href="<?php the_field('play_link'); ?>"><?php the_field('play_year'); ?></a>
                 </div>
             </div>
@@ -67,6 +67,7 @@ Template Name: Home
                         <img src="<?php echo esc_url($child_ticket_image['url']); ?>" alt="<?php echo esc_attr($child_ticket_image['alt']); ?>">
                     <?php endif; ?>
                 <div class="ticket-details">
+                    <h3 class="child-ticket-subheading"><?php the_field('child_ticket_subheading') ?></h3>
                     <p><?php the_field('child_ticket_description') ?></p>
                     <a href="<?php the_field('ticket_button_link'); ?>" class="ticket-button"><?php the_field('ticket_button_text'); ?></a>
                 </div>
@@ -74,6 +75,7 @@ Template Name: Home
 
             <div class="adult-ticket">
                 <div class="ticket-details">
+                    <h3 class="adult-ticket-subheading"><?php the_field('adult_ticket_subheading') ?></h3>
                     <p><?php the_field('adult_ticket_description') ?></p>
                     <a href="<?php the_field('ticket_button_link'); ?>" class="ticket-button"><?php the_field('ticket_button_text'); ?></a>
                 </div>
