@@ -366,6 +366,14 @@ body p {
   color: #e53e3e;
 }
 
+.wpcf7-response-output {
+  border: 0.125rem solid;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e53e3e;
+}
+
 .wpcf7-spinner {
   display: none;
 }
