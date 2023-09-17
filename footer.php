@@ -4,7 +4,7 @@
             <h3>Contact Us</h3>
             <p><a href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></p>
             <p><a href="mailto:<?php the_field('email_address'); ?>"><?php the_field('email_address'); ?></a></p>
-            <p><a href="<?php the_field('organization_website'); ?>"><?php the_field('organization_website'); ?></a></p>
+            <p><a href="<?php the_field('organization_url'); ?>"><?php the_field('organization_website'); ?></a></p>
         </div>
         <div class="social-media">
             <h3>Follow Us</h3>
