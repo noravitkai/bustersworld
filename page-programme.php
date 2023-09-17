@@ -108,7 +108,7 @@ Template Name: Programme
                     $count = 0;
                     while ($sponsors_query->have_posts()) :
                         $sponsors_query->the_post();
-                        if ($count % 5 === 0) :
+                        if ($count % 6 === 0) :
                 ?>
                             <div class="sponsor-row">
                 <?php endif; ?>
@@ -121,12 +121,12 @@ Template Name: Programme
                         </div>
 
                         <?php $count++;
-                        if ($count % 5 === 0) : ?>
+                        if ($count % 6 === 0) : ?>
                             </div>
                 <?php endif;
                     endwhile;
 
-                    if ($count % 5 !== 0) : ?>
+                    if ($count % 6 !== 0) : ?>
                         </div>
                 <?php endif;
 

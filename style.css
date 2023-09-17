@@ -8,6 +8,25 @@ body {
   margin: 0;
 }
 
+body h1 {
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
+body h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body p {
+  font-size: 1.25rem;
+}
+
 /* Navbar */
 .custom-navbar {
   background-color: #082f49;
@@ -70,18 +89,14 @@ body {
 }
 
 .hero-heading {
-  font-size: 2.75rem;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .hero-subheading {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .hero-date {
-  font-size: 1.25rem;
   color: #e53e3e;
   margin-bottom: 2rem;
 }
@@ -117,11 +132,9 @@ body {
 }
 
 .story-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
 }
 
 .story-stages {
@@ -148,14 +161,12 @@ body {
 .book-year,
 .movie-year,
 .play-year {
-  font-size: 1rem;
   margin-top: 1rem;
 }
 
 .year-button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
   font-weight: bold;
   color: #e53e3e;
   border: 2px dashed #e53e3e;
@@ -196,7 +207,6 @@ body {
   gap: 10rem;
   align-items: center;
   margin: 0 12rem;
-  font-size: 1.25rem;
   margin-bottom: 3rem;
 }
 
@@ -207,15 +217,12 @@ body {
   gap: 9rem;
   align-items: center;
   margin: 0 12rem;
-  font-size: 1.25rem;
 }
 
 .ticket-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
 }
 
 .child-ticket-subheading,
@@ -254,12 +261,10 @@ body {
 }
 
 .competition-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   margin-top: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
 }
 
 .competition-blocks {
@@ -269,7 +274,6 @@ body {
   gap: 9rem;
   align-items: flex-start;
   margin: 0 12rem;
-  font-size: 1.25rem;
   align-items: center;
 }
 
@@ -281,8 +285,6 @@ body {
 }
 
 .competition-subheading {
-  font-size: 1.5rem;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -301,6 +303,8 @@ body {
   border-radius: 0.5rem;
   padding: 1.25rem;
   background-color: #f9f9f9;
+  font-size: 1.25rem;
+  position: relative;
 }
 
 .wpcf7-form p {
@@ -311,8 +315,7 @@ body {
   color: black;
   font-weight: bold;
   display: block;
-  margin-bottom: 0.625rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .wpcf7-form input[type="text"],
@@ -322,10 +325,12 @@ body {
   border-radius: 0.5rem;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+  padding-left: 0.625rem;
   width: 100%;
   margin-bottom: 0;
   background-color: #f9f9f9;
   box-sizing: border-box;
+  margin-bottom: 1rem;
 }
 
 .wpcf7-form input[type="submit"] {
@@ -382,16 +387,12 @@ body {
 }
 
 .welcome-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
 }
 
 .directors-subheading {
-  font-size: 1.5rem;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -442,11 +443,9 @@ body {
 }
 
 .actor-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
   padding-bottom: 1.5rem;
 }
 
@@ -472,13 +471,7 @@ body {
   margin-left: 1rem;
 }
 
-.actor-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 .actor-character {
-  font-size: 1.25rem;
   color: #e53e3e;
 }
 
@@ -496,11 +489,9 @@ body {
 }
 
 .sponsors-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
   padding-bottom: 1.5rem;
 }
 
@@ -529,11 +520,9 @@ body {
 }
 
 .reviews-heading {
-  font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 0.6rem;
   padding-bottom: 1.5rem;
 }
 
@@ -541,7 +530,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .reviews-form {
@@ -550,10 +539,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.reviews-form label {
-  font-size: 1rem;
 }
 
 .reviews-form textarea {
@@ -585,16 +570,26 @@ body {
   background-color: #f9f9f9;
 }
 
+.reviews-form {
+  font-size: 1.25rem;
+
+  #site-reviews-rating-glsr_83953ed1,
+  #site-reviews-title-glsr_83953ed1,
+  #site-reviews-content-glsr_83953ed1,
+  #site-reviews-name-glsr_83953ed1,
+  #site-reviews-email-glsr_83953ed1 {
+    font-size: 1rem;
+  }
+}
+
 .glsr-field {
   margin-bottom: 1rem;
 }
 
 .glsr-label {
   color: black;
-  font-weight: bold;
   display: block;
   margin-bottom: 0.625rem;
-  font-size: 1rem;
 }
 
 .glsr-input,
@@ -603,6 +598,12 @@ body {
   border-radius: 0.5rem;
   padding: 0.625rem;
   width: 100%;
+}
+
+.glsr-review h4,
+.glsr-review p,
+.glsr-tag-value {
+  font-size: 1.25rem;
 }
 
 .glsr-button {
@@ -641,14 +642,14 @@ body {
 
 .glsr-tag-value {
   font-size: 1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
 }
 
 .glsr-review-author {
   color: #e53e3e;
 }
 
-/* Footer Section */
+/* Footer */
 .custom-footer {
   background-color: #082f49;
   color: white;
@@ -669,8 +670,9 @@ body {
   margin-bottom: 1rem;
 }
 
-.contact-info p, .location-info p {
+.contact-info p, .location-info p, .copyright p {
   margin: 0.5rem 0;
+  font-size: 1rem;
 }
 
 .social-media a {
