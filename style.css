@@ -814,7 +814,7 @@ body p {
   }
 
   .welcome-columns {
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .welcome-heading {
@@ -822,13 +822,8 @@ body p {
   }
 
   .directors-photo {
-    flex: 0 0 auto;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
-  }
-
-  .welcome-text {
-    flex: 1;
   }
 
   /* Actor Section */
