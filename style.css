@@ -1,6 +1,6 @@
 /*!
- Theme Name: Buster's World Theme
- Author: Nora Vitkai
+Theme Name: Buster's World Theme
+Author: Nora Vitkai
 */
 
 body {
@@ -36,7 +36,7 @@ body {
 }
 
 .menu li {
-  margin-right: 20px; /* Reduce to a single space */
+  margin-right: 20px;
 }
 
 .menu a {
@@ -121,7 +121,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
 }
 
 .story-stages {
@@ -129,7 +129,7 @@ body {
   flex-direction: row;
   gap: 6rem;
   align-items: center;
-  margin: 0 12rem; /* Reduce to a single space */
+  margin: 0 12rem;
   margin-bottom: 3rem;
 }
 
@@ -162,10 +162,9 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Maintain hover effect on smaller screens */
 .year-button:hover {
   background-color: #e53e3e;
   color: white;
@@ -196,7 +195,7 @@ body {
   justify-content: space-evenly;
   gap: 10rem;
   align-items: center;
-  margin: 0 12rem; /* Reduce to a single space */
+  margin: 0 12rem;
   font-size: 1.25rem;
   margin-bottom: 3rem;
 }
@@ -207,7 +206,7 @@ body {
   justify-content: space-evenly;
   gap: 9rem;
   align-items: center;
-  margin: 0 12rem; /* Reduce to a single space */
+  margin: 0 12rem;
   font-size: 1.25rem;
 }
 
@@ -216,7 +215,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
 }
 
 .child-ticket-subheading,
@@ -260,7 +259,7 @@ body {
   margin-bottom: 3rem;
   margin-top: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
 }
 
 .competition-blocks {
@@ -269,7 +268,7 @@ body {
   justify-content: space-evenly;
   gap: 9rem;
   align-items: flex-start;
-  margin: 0 12rem; /* Reduce to a single space */
+  margin: 0 12rem;
   font-size: 1.25rem;
   align-items: center;
 }
@@ -297,7 +296,6 @@ body {
 }
 
 /* Competition Form */
-
 .wpcf7-form {
   border: 0.125rem solid #E53E3E;
   border-radius: 0.5rem;
@@ -388,7 +386,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
 }
 
 .directors-subheading {
@@ -430,20 +428,6 @@ body {
   height: auto;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-  .welcome-columns {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .welcome-text {
-    margin-right: 0;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-}
-
 /* Actor Section */
 .actor-section {
   background-color: #f9f9f9;
@@ -462,7 +446,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
   padding-bottom: 1.5rem;
 }
 
@@ -498,14 +482,6 @@ body {
   color: #e53e3e;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
-  .left-column,
-  .right-column {
-    width: 100%;
-  }
-}
-
 /* Sponsors Section */
 .sponsors-section {
   background-color: #f5f5f5;
@@ -524,7 +500,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #082f49;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
   padding-bottom: 1.5rem;
 }
 
@@ -557,7 +533,7 @@ body {
   font-weight: bold;
   margin-bottom: 3rem;
   text-decoration: underline dashed #e53e3e;
-  text-underline-offset: 0.4rem; /* Use 'rem' unit */
+  text-underline-offset: 0.4rem;
   padding-bottom: 1.5rem;
 }
 
@@ -737,10 +713,36 @@ body {
 
 /* Media Query for tablets and mobiles */
 @media (max-width: 768px) {
+  body h1 {
+    font-size: 2.5rem;
+  }
+
+  body h2 {
+    font-size: 2.25rem;
+  }
+
+  body h3 {
+    font-size: 1.5rem;
+  }
+
+  body p {
+    font-size: 1.25rem;
+  }
+
+  /* Hero Section */
+  .hero-heading,
+  .hero-subheading {
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-button {
+    margin-bottom: 1.5rem;
+  }
+
   /* Story Section */
   .story-stages {
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     margin: 0 2rem;
   }
 
@@ -750,53 +752,24 @@ body {
     text-align: left;
   }
 
-  .story-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+  .story-book .year-button,
+  .story-movie .year-button,
+  .story-play .year-button {
+    margin-left: 0;
+    margin-right: auto;
   }
 
-  .year-button {
-    font-size: 0.875rem;
-    padding: 0.375rem 0.75rem;
+  .story-book img,
+  .story-movie img,
+  .story-play img {
+    margin-bottom: 1.25rem;
   }
 
   /* Ticket Section */
   .child-ticket,
   .adult-ticket {
     flex-direction: column;
-    gap: 1.5rem;
-    margin: 0 2rem;
-    font-size: 0.875rem;
-  }
-
-  .child-ticket img,
-  .adult-ticket img {
-    max-width: 100%;
-    align-self: flex-start;
-  }
-
-  .child-ticket {
-    margin-bottom: 3rem;
-  }
-
-  .ticket-details p {
-    font-size: 0.875rem;
-  }
-
-  .ticket-button {
-    margin-top: 0.5rem;
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .child-ticket-subheading,
-  .adult-ticket-subheading {
-    text-align: left;
-  }
-
-  .ticket-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 3rem;
   }
 
   .adult-ticket img {
@@ -806,127 +779,106 @@ body {
   /* Competition Section */
   .competition-blocks {
     flex-direction: column;
+    gap: 3rem;
   }
 
-  .competition-details,
   .competition-form {
-    margin: 0.1rem 0;
     width: 100%;
   }
 
-  .competition-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .competition-subheading {
-    text-align: left;
-    font-size: 0.875rem;
-  }
-
-  .competition-details h3 {
-    font-size: 1rem;
-    margin: 0.1rem 0;
-  }
-
-  .competition-details p {
-    font-size: 0.875rem;
-    margin-bottom: 0.25rem;
-  }
-
   /* Competition Form */
-  .competition-form {
-    margin-top: 0.1rem;
+  .wpcf7-form label {
+    font-size: 1.25rem;
   }
 
   .wpcf7-form input[type="text"],
   .wpcf7-form input[type="email"],
   .wpcf7-form input[type="submit"] {
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .competition-blocks {
-    gap: 3rem;
-  }
-
-  /* Welcome Section */
-  .welcome-columns {
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 2rem;
-    gap: 1rem;
-  }
-
-  .welcome-text {
-    margin-right: 0;
-    text-align: left;
-  }
-
-  .welcome-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .directors-subheading {
-    text-align: left;
     font-size: 1rem;
   }
 
-  .welcome-text p {
-    font-size: 0.875rem;
+  /* Welcome Section */
+  .welcome-content {
+    margin: 2rem;
   }
 
-  /* Actors Section */
+  .welcome-columns {
+    gap: 3rem;
+  }
+
+  .welcome-heading {
+    margin-bottom: 1rem;
+  }
+
+  .directors-photo {
+    flex: 0 0 auto;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .welcome-text {
+    flex: 1;
+  }
+
+  /* Actor Section */
   .left-column,
   .right-column {
     width: 100%;
   }
 
-  .actor-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .actor-name,
-  .actor-character {
-    font-size: 0.875rem;
+  .actor-columns {
+    gap: 0;
   }
 
   /* Sponsors Section */
   .sponsor-row {
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .sponsor-item {
-    flex-basis: calc(33.33% - 2rem);
-    margin: 1rem;
+    flex-basis: calc(33.33% - 1rem);
   }
 
-  .sponsors-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+  .sponsor-item img {
+    max-height: 96px;
+    width: auto;
   }
 
-  /* Reviews Section */
+  /* Reviews and Ratings Section */
   .reviews-columns {
     flex-direction: column;
-    align-items: center;
     gap: 3rem;
   }
 
+  .reviews-submitted,
   .reviews-form {
-    text-align: center;
+    flex-basis: 50%;
+    margin: 0;
   }
 
-  .reviews-heading {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+  .reviews-form {
+    font-size: 1.25rem;
+
+    #site-reviews-rating-glsr_83953ed1,
+    #site-reviews-title-glsr_83953ed1,
+    #site-reviews-content-glsr_83953ed1,
+    #site-reviews-name-glsr_83953ed1,
+    #site-reviews-email-glsr_83953ed1 {
+      font-size: 1rem;
+    }
   }
 
-  /* Footer */
-  .footer-content {
+  .glsr-review h4,
+  .glsr-review p,
+  .glsr-tag-value {
+    font-size: 1.25rem;
+  }
+
+   /* Footer */
+   .footer-content {
     flex-direction: column;
     align-items: center;
   }
@@ -934,10 +886,18 @@ body {
   .footer-content div {
     width: 100%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  .footer-line {
-    width: 100%;
+  .footer-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .footer-content p {
+    font-size: 1rem;
+  }
+  
+  .copyright p {
+    font-size: 1rem;
   }
 }
