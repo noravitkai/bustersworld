@@ -32,7 +32,7 @@ Template Name: Home
                         <img src="<?php echo esc_url($book_icon['url']); ?>" alt="<?php echo esc_attr($book_icon['alt']); ?>">
                     <?php endif; ?>
                     <p><?php the_field('book_description'); ?></p>
-                    <a class="year-button" href="<?php the_field('book_link'); ?>"><?php the_field('book_year'); ?></a>
+                    <a target="_blank" class="year-button" href="<?php the_field('book_link'); ?>"><?php the_field('book_year'); ?></a>
                 </div>
 
                 <div class="story-movie">
@@ -41,7 +41,7 @@ Template Name: Home
                         <img src="<?php echo esc_url($movie_icon['url']); ?>" alt="<?php echo esc_attr($movie_icon['alt']); ?>">
                     <?php endif; ?>
                     <p><?php the_field('movie_description'); ?></p>
-                    <a class="year-button" href="<?php the_field('movie_link'); ?>"><?php the_field('movie_year'); ?></a>
+                    <a target="_blank" class="year-button" href="<?php the_field('movie_link'); ?>"><?php the_field('movie_year'); ?></a>
                 </div>
 
                 <div class="story-play">
@@ -50,7 +50,7 @@ Template Name: Home
                         <img src="<?php echo esc_url($play_icon['url']); ?>" alt="<?php echo esc_attr($play_icon['alt']); ?>">
                     <?php endif; ?>
                     <p><?php the_field('play_description'); ?></p>
-                    <a class="year-button" href="<?php the_field('play_link'); ?>"><?php the_field('play_year'); ?></a>
+                    <a target="_blank" class="year-button" href="<?php the_field('play_link'); ?>"><?php the_field('play_year'); ?></a>
                 </div>
             </div>
         </div>
